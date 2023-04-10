@@ -139,3 +139,14 @@ a {
 li {
     list-style: none;
 }
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    background:#cfc1ff9c ;
+    position: absolute;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #100471;
+}
