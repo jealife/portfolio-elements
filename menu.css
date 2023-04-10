@@ -1,4 +1,4 @@
-.nav-bar {
+header {
     z-index: 9999;
 }
 
@@ -15,6 +15,9 @@ span {}
 }
 
 @media (max-width: 900px) {
+    p{
+        font-size: 14px;
+    }
     nav {
         position: fixed;
         z-index: 999;
