@@ -18,6 +18,7 @@ span{
 }
 @media (max-width: 900px) {
     nav {
+        position: fixed;
         z-index: 999;
         bottom: 0;
         width: 100%;
@@ -30,6 +31,8 @@ span{
     }
 
     .nav {
+        
+        position: fixed;
         display: flex;
         width: 100%;
         padding-bottom: 25px;
@@ -50,7 +53,8 @@ span{
         justify-content: space-around;
     }
     .nav-bar .logo-container {
-
+        
+        position: fixed;
         border-bottom-right-radius: 45px;
         border-top-right-radius: 45px;
         top: 0;
@@ -78,6 +82,7 @@ span{
 
 @media (min-width: 1199px) {
     nav {
+        position: fixed;
         top: 0;
         right: 0;
         display: flex;
