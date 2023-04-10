@@ -1,4 +1,7 @@
-.main, .container-item{
-    min-height: 100vh;
+.container-item{
     width: 100%;
+    background-attachment: fixed;
+}
+.main{
+    min-height: 100vh;
 }
