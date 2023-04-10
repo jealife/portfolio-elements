@@ -4,6 +4,7 @@ h1 {
 
 
 @media (max-width: 900px) {
+    
     .image-hero-container img {
         width: 85vw;
     }
@@ -16,7 +17,7 @@ h1 {
         min-height: 100vh;
         width: 100%;
         background: linear-gradient(90deg, rgb(1, 28, 49), rgb(6, 4, 39));
-        color: #fff;
+        
     }
 
     .main-content {
@@ -29,6 +30,13 @@ h1 {
         min-height: 100vh;
 
     }
+    .Slide-4,  .Slide-5,.Slide-1, .slide-2{
+        color: #fff;
+
+    }
+    .Slide-1 .hero-content h1{
+        color: #fff;
+    }
     .Slide-3{
         background: #f5f0f0;
         color: #252528;
@@ -40,7 +48,6 @@ h1 {
         background-position: center;
         background-size: cover;
         background-attachment:  fixed;
-        ;
         opacity: 1;
     }
     .Slide-3 .image-hero-container img{
@@ -53,12 +60,9 @@ h1 {
     .Slide-5{
         background-image: url(blurry_background.jpg);
         background-size: 6em 6em;
-        background-color: #09193b;
         background-position: center;
         background-size: cover;
         background-attachment:  fixed;
-        ;
-        opacity: 1;
     }
 }
 
