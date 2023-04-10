@@ -79,17 +79,15 @@
     backdrop-filter: blur(50px);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     
-    background: linear-gradient(90deg, #011c31, #060427);
+    background: linear-gradient(90deg, #011c31, #0604278a);
     border: #fff solid 0.5px;
-    
 }
 .card-2-container a{
-    background-color: #06042790;
+    background-color: #0604276a;
     border-radius: 12px;
     margin-top: 1rem;
     padding: 15px;
     color: #ffffff;
-    backdrop-filter: blur(50px);
     border: #fff solid 0.5px;
     transition: 0.5s;
 }
