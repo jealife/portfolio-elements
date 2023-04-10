@@ -23,7 +23,7 @@
             <div class="nav-bar full fixed">
                 <div class="logo-container absolute">
                     <span>
-                        <a href="#">JEaLiFe</a>
+                        <a href="#Home" id="home">JEaLiFe</a>
                     </span>
                 </div>
                 <nav class="navigation nav absolute">
@@ -72,16 +72,26 @@
         $(this).css("transition", "0.5s");
 
       });
+      $("#home").click(function () {
+        $(".container-item").load("home.html");
+        $("#card").css("color", "black");
+        $("#menu").css("color", "black");
+        $("#button").css("color", "black");
+        $(this).css("transition", "0.5s");
+
+      });
 
 
       $("#card").click(function () {
         $(".container-item").load("card_1.html")
         $(".container-item").css("background-size","cover");
-        $(".container-item").css("background-image","url('https://unsplash.it//1800?blur')");
+        $(".container-item").css("background-image","url('https://unsplash.it//1000?blur')");
         $(".container-item").css("background-position","center");
         $(".container-item").css("background-repeat","n-repeat");
+        
 
         $("#accueil").css("color", "black");
+        $("#menu").css("color", "black");
         $("#button").css("color", "black");
         $(this).css("color", "aqua");
         $(this).css("transition", "0.5s");
@@ -92,9 +102,11 @@
 
         $("#accueil").css("color", "black");
         $("#card").css("color", "black");
+        $("#menu").css("color", "black");
         $(this).css("color", "aqua");
         $(this).css("transition", "0.5s");
       });
+      
 
       $("#menu").click(function () {
         /*$(".container").load("../menu/menu.html")*/
