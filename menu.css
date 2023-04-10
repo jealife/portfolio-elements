@@ -5,13 +5,15 @@ header {
 
 .link-container .nav-item a {
     color: #1a1a1b;
-}
-
-span {}
-
-.link-container {
-    cursor: pointer;
+    font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.link-container .nav-item a:hover{
+    color: aqua;
+    
+    transition: 0.5s;
 }
 
 @media (max-width: 900px) {
