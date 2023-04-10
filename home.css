@@ -27,6 +27,38 @@ h1 {
         padding: 0 25px;
         text-align: center;
         min-height: 100vh;
+
+    }
+    .Slide-3{
+        background: #f5f0f0;
+        color: #252528;
+    }
+    .slide-2{
+        background: radial-gradient(circle at top left,transparent 9%, #413c9d 10% ,#413c9d 15% , transparent 16%) , radial-gradient(circle at bottom left,transparent 9%, #413c9d 10% ,#413c9d 15% , transparent 16%), radial-gradient(circle at top right ,transparent 9%, #413c9d 10% ,#413c9d 15% , transparent 16%) , radial-gradient(circle at bottom right,transparent 9%, #413c9d 10% ,#413c9d 15% , transparent 16%),radial-gradient(circle, transparent 25%, #09193b  26%),linear-gradient(45deg, transparent 46%, #413c9d 47%, #413c9d 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #413c9d 47%, #413c9d 52%, transparent 53%);
+        background-size: 6em 6em;
+        background-color: #09193b;
+        background-position: center;
+        background-size: cover;
+        background-attachment:  fixed;
+        ;
+        opacity: 1;
+    }
+    .Slide-3 .image-hero-container img{
+        width: 65vw;
+    }
+    .Slide-4 .image-hero-container img{
+        clip-path: circle();
+        width: 50vw;
+    }
+    .Slide-5{
+        background-image: url(blurry_background.jpg);
+        background-size: 6em 6em;
+        background-color: #09193b;
+        background-position: center;
+        background-size: cover;
+        background-attachment:  fixed;
+        ;
+        opacity: 1;
     }
 }
 
@@ -42,14 +74,16 @@ h1 {
     }
 
     .main-content {
-        max-width: 1000px;
+        max-width: 1200px;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
     }
 
     .image-hero-container img {
-        width: 500px;
+        width: 35vw;
+        position: relative;
+        right: 0;
     }
 
     h1 {
