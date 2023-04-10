@@ -65,6 +65,9 @@ h1 {
         clip-path: circle();
         width: 50vw;
     }
+    br{
+        display: block;
+    }
 }
 
 @media (min-width: 1199px) {
