@@ -3,7 +3,7 @@ header {
 }
 
 
-.link-container .nav-item span {
+.link-container .nav-item a {
     color: #1a1a1b;
 }
 
@@ -53,6 +53,7 @@ span {}
     }
 
     .link-container {
+        margin-top: 1rem;
         width: 100%;
         display: flex;
         justify-content: center;
