@@ -5,7 +5,7 @@ h1 {
 
 @media (max-width: 900px) {
     .image-hero-container img {
-        width: 90vw;
+        width: 75vw;
     }
     h1{
         font-size: 3rem;
