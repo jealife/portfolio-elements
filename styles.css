@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Montserrat:wght@100;200;300;400;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,900&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /* background: #f5f0f0; */
+    background-color: #070616;
+}
+
+
+
+a {
+    text-decoration: none;
+
+}
+
+.txt-deco-none {
+    text-decoration: none;
+}
+
+.btn {
+    border: none;
+    padding: 1.2rem;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixe {
+    position: fixed;
+}
+
+.full {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.place-center {
+    place-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    columns: 1;
+}
+
+.col-2 {
+    columns: 2;
+}
+
+.col-3 {
+    columns: 3;
+}
+
+
+
+.round-25 {
+    border-radius: 25px;
+}
+
+.round-12 {
+    border-radius: 12px;
+}
+
+.round-45 {
+    border-radius: 45px;
+}
+
+.round-5 {
+    border-radius: 5px;
+}
+
+.round-10 {
+    border-radius: 10px;
+}
+
+.round-full {
+    border-radius: 200px;
+}
+
+
+.m-auto {
+    margin: auto;
+}
+
+.m-t-1 {
+    margin-top: 1rem;
+}
+
+.m-t-2 {
+    margin-top: 2rem;
+}
+
+.m-t-3 {
+    margin-top: 3rem;
+}
+
+.m-t-4 {
+    margin-top: 4rem;
+}
+
+.m-t-5 {
+    margin-top: 5rem;
+}
+
+li {
+    list-style: none;
+}

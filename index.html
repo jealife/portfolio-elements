@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Elments</title>
+
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="card.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="home.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="navi full">
+            <div class="nav-bar full fixed">
+                <div class="logo-container absolute">
+                    <span>
+                        <a href="#">JEaLiFe</a>
+                    </span>
+                </div>
+                <nav class="navigation nav absolute">
+                    <div class="link-container relative">
+                        <li class="nav-item " id="accueil">Accueil</li>
+                        <li class="nav-item " id="card">Cards</li>
+                        <li class="nav-item " id="button">Buttons</li>
+                        <li class="nav-item " id="menu">Menu</li>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <main class="main">
+            <div class="container-item  grid place-center">
+                <div class="main-content " >
+                    <div class="image-hero-container"  >
+                        <img  src="Full Size-1.png" alt="image-hero">
+                    </div>
+                    <div class="hero-content " style="color:#fff;">
+                        <div class="hero-title ">
+                            <h1>JEaLiFe Pictures</h1>
+                        </div>
+                        <div class="hero-description m-t-1">
+                            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+        
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+        $(document).ready(function () {
+           /* $(".container-item").load("home.html");*/
+            $("#accueil").css("color", "aqua");
+      
+        });
+        $(document).ready(function () {
+      $("#accueil").click(function () {
+        $(".container-item").load("home.html");
+        $("#card").css("color", "black");
+        $("#button").css("color", "black");
+        $(this).css("color", "aqua");
+        $(this).css("transition", "0.5s");
+
+      });
+
+
+      $("#card").click(function () {
+        $(".container-item").load("card_1.html")
+        $(".container-item").css("background-size","cover");
+        $(".container-item").css("background-image","url('https://unsplash.it//1800?blur')");
+        $(".container-item").css("background-position","center");
+        $(".container-item").css("background-repeat","n-repeat");
+
+        $("#accueil").css("color", "black");
+        $("#button").css("color", "black");
+        $(this).css("color", "aqua");
+        $(this).css("transition", "0.5s");
+      });
+
+      $("#button").click(function () {
+        $(".container-item").load("button.html")
+
+        $("#accueil").css("color", "black");
+        $("#card").css("color", "black");
+        $(this).css("color", "aqua");
+        $(this).css("transition", "0.5s");
+      });
+
+      $("#menu").click(function () {
+        /*$(".container").load("../menu/menu.html")*/
+        $("#card").css("color", "black");
+        $("#accueil").css("color", "black");
+        $("#button").css("color", "black");
+        $(this).css("color", "aqua");
+        $(this).css("transition", "0.5s");
+      });
+
+    });
+  </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+    AOS.init();
+  </script>
+    </body>
+</html>
