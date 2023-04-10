@@ -16,7 +16,7 @@
     object-fit: cover;
 }
 .cards-container {
-    columns: 2 ;
+    columns: 3 ;
     column-gap: 2rem ;
 }
 .cards-container .next{
