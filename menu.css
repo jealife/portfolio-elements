@@ -97,7 +97,9 @@ ion-icon {
         z-index:999;
     }
     .img-menu img{
+        top: 0;
         width: 85vw;
+        margin-bottom: 68px;
       }
       .modal {
         z-index: 9999;
