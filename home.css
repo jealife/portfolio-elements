@@ -62,8 +62,7 @@ h1 {
         width: 65vw;
     }
     .Slide-4 .image-hero-container img{
-        clip-path: circle();
-        width: 50vw;
+        width: 65vw;
     }
     br{
         display: block;
