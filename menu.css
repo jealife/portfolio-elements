@@ -1,5 +1,5 @@
 header {
-    z-index: 99;
+    z-index: 999;
 }
 
 
@@ -18,20 +18,14 @@ header {
 ion-icon {
     font-size: 27px;
 }
-.menu{
-    position: relative;
-}
-.menu a{
-    position: absolute;
-    z-index:999;
-}
+
 @media (max-width: 900px) {
     p{
         font-size: 14px;
     }
     nav {
         position: fixed;
-        z-index: 999;
+        z-index: 9999;
         bottom: 0;
         width: 100%;
         display: grid;
@@ -98,8 +92,27 @@ ion-icon {
 
         color: #474749;
     }
+    #menu{
+        position: absolute;
+        z-index:999;
+    }
     .img-menu img{
         width: 85vw;
+      }
+      .modal {
+        z-index: 9999;
+        position: fixed;
+        top: 85%;
+        right: -100%;
+        translate: 50% -50%;
+        background: #ffffff5e;
+        backdrop-filter: blur(25px);
+        color: #f9f9f9;
+        padding: 48px 40px;
+        width: 90vw;
+        height: 50vh;
+        border-radius: 25px 25px 0 0;
+    
       }
 
 }
@@ -169,6 +182,21 @@ ion-icon {
 
         color: #474749;
     }
+    .modal {
+        z-index: 999;
+        position: fixed;
+        top: 50%;
+        right: -100%;
+        translate: 50% -50%;
+        background: #ffffff5e;
+        backdrop-filter: blur(25px);
+        color: #f9f9f9;
+        padding: 48px 40px;
+        width: 65vw;
+        height: 50vh;
+        border-radius: 25px;
+    
+      }
 }
 
 
@@ -232,28 +260,11 @@ ion-icon {
     transition: 0.5s;
   }
   
-  .modal {
-    z-index: 999;
-    position: fixed;
-    top: 85%;
-    right: -300px;
-    translate: 50% -50%;
-    background: #ffffff5e;
-    backdrop-filter: blur(25px);
-    color: #f9f9f9;
-    padding: 48px 40px;
-    width: 90vw;
-    height: 50vh;
-    border-radius: 25px 25px 0 0;
-
-  }
-  .img-menu{
-    padding: 48px 40px;
-    width: 90vw;
-  }
+ 
+  
   .img-menu img{
-    position: relative;
-    width: 85vw;
+    width: 75vw;
+    margin-bottom: 60px;
   }
   
   @keyframes modal-content-in {
