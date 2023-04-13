@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:description" content="A other JEaLiFe's Portfolio .">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1420&q=80">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1420&q=80">
     <meta property="og:url" content="https://portfolio-elements.vercel.app/index.html">
     <meta name="twitter:card" content="summary_large_image">
     <title>Portfolio Elments</title>
@@ -23,25 +24,26 @@
 
 
     <style>
-        swiper-container, .container-item {
-          width: 100%;
-          height: 100%;
+        swiper-container,
+        .container-item {
+            width: 100%;
+            height: 100%;
         }
-    
+
         swiper-slide {
-          font-size: 18px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-    
+
         swiper-slide img {
-          display: block;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-        </style>
+    </style>
 </head>
 
 <body>
@@ -57,7 +59,7 @@
                     <li class="nav-item "><a href="#Home" id="accueil">Accueil</a></li>
                     <li class="nav-item "><a href="#Cards" id="card">Cards</a> </li>
                     <li class="nav-item "><a href="#Buttons" id="button">Buttons</a> </li>
-                    <li class="nav-item "><a href="#" id="menu" id="button">Menu</a></li>
+                    <li class="nav-item "><a href="#" id="menu" id="button"><ion-icon  name="menu-outline"></ion-icon></a></li>
                 </div>
             </nav>
         </div>
@@ -67,7 +69,8 @@
     <main class="main">
 
         <div class="container-item  grid place-center">
-            <swiper-container class="mySwiper" pagination-dynamic-bullets="true" pagination="true" loop="true" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+            <swiper-container class="mySwiper" pagination-dynamic-bullets="true" pagination="true" loop="true"
+                centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
 
                 <swiper-slide class="Slide-1">
                     <div class="main-content ">
@@ -81,7 +84,7 @@
                             <div class="hero-description m-t-1">
                                 <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
                                     industries for previewing layouts and visual mockups.
-    
+
                                 </p>
                             </div>
                         </div>
@@ -99,12 +102,12 @@
                             <div class="hero-description m-t-1">
                                 <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
                                     industries for previewing layouts and visual mockups.
-    
+
                                 </p>
                             </div>
                         </div>
                     </div>
-                     </swiper-slide>
+                </swiper-slide>
                 <swiper-slide class="Slide-3">
                     <div class="main-content ">
                         <div class="image-hero-container ">
@@ -117,7 +120,7 @@
                             <div class="hero-description m-t-1">
                                 <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
                                     industries for previewing layouts and visual mockups.
-    
+
                                 </p>
                             </div>
                         </div>
@@ -126,7 +129,7 @@
                 <swiper-slide class="Slide-4">
                     <div class="main-content ">
                         <div class="image-hero-container ">
-                            <img src="DRIP_20.png"  alt="image-hero">
+                            <img src="DRIP_20.png" alt="image-hero">
                         </div>
                         <div class="hero-content m-t-5 ">
                             <div class="hero-title ">
@@ -135,7 +138,7 @@
                             <div class="hero-description m-t-1">
                                 <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
                                     industries for previewing layouts and visual mockups.
-    
+
                                 </p>
                             </div>
                         </div>
@@ -144,7 +147,7 @@
                 <swiper-slide class="Slide-5">
                     <div class="main-content ">
                         <div class="image-hero-container ">
-                            <img src="runing man.png"  alt="image-hero">
+                            <img src="runing man.png" alt="image-hero">
                         </div>
                         <div class="hero-content m-t-5 ">
                             <div class="hero-title ">
@@ -153,7 +156,7 @@
                             <div class="hero-description m-t-1">
                                 <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
                                     industries for previewing layouts and visual mockups.
-    
+
                                 </p>
                             </div>
                         </div>
@@ -162,6 +165,11 @@
             </swiper-container>
         </div>
     </main>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
         $(document).ready(function () {
             /* $(".container-item").load("home.html");*/
@@ -181,7 +189,7 @@
             });
             $("#home").click(function () {
                 $(".container-item").load("home.html");
-                
+
                 $("#accueil").css("color", "aqua");
                 $(".container-item").css("background-image", "linear-gradient(90deg, rgb(1, 28, 49), rgb(6, 4, 39))");
                 $(".container-item").css("background-attachment;", "fixed");
