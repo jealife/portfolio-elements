@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:description" content="A other JEaLiFe's Portfolio .">
-    <meta property="og:image"
-        content="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1420&q=80">
-    <meta property="og:url" content="https://portfolio-elements.vercel.app/index.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <title>Portfolio Elments</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:description" content="A other JEaLiFe's Portfolio .">
+        <meta property="og:image"
+            content="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1420&q=80">
+        <meta property="og:url"
+            content="https://portfolio-elements.vercel.app/index.html">
+        <meta name="twitter:card" content="summary_large_image">
+        <title>Portfolio Elments</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="card.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="home.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
-
-    <style>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="card.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="home.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <style>
         swiper-container,
         .container-item {
             width: 100%;
@@ -44,133 +45,171 @@
             object-fit: cover;
         }
     </style>
-</head>
+    </head>
 
-<body>
-    <header class="navi full fixe">
-        <div class="nav-bar full fixed">
-            <div class="logo-container absolute">
-                <span>
-                    <a href="#Home" id="home">JEaLiFe</a>
-                </span>
-            </div>
-            <nav class="navigation nav absolute">
-                <div class="link-container relative ">
-                    <li class="nav-item "><a href="#Home" id="accueil">Accueil</a></li>
-                    <li class="nav-item "><a href="#Cards" id="card">Cards</a> </li>
-                    <li class="nav-item "><a href="#Buttons" id="button">Buttons</a> </li>
-                    <li class="nav-item "><a href="#" id="menu" id="button"><ion-icon  name="menu-outline"></ion-icon></a></li>
+    <body>
+        <header class="navi full fixe">
+            <div class="nav-bar full fixed">
+                <div class="logo-container absolute">
+                    <span>
+                        <a href="#Home" id="home">JEaLiFe</a>
+                    </span>
                 </div>
-            </nav>
+                <nav class="navigation nav absolute">
+                    <div class="link-container relative ">
+                        <li class="nav-item "><a href="#Home" id="accueil">Accueil</a></li>
+                        <li class="nav-item "><a href="#Cards" id="card">Cards</a>
+                        </li>
+                        <li class="nav-item "><a href="#Buttons" id="button">Buttons</a>
+                        </li>
+                        <li class="nav-item menu"><a href="#"
+                                onclick="toggleModal()" type="button" id="menu"
+                                id="button"><ion-icon
+                                    name="menu-outline"></ion-icon></a></li>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+
+        <div class="background" onclick="toggleModal()">
+            <div class="  img-menu ">
+            <img src="Full Size.png" alt="img-menu">
         </div>
-    </header>
-
-
-    <main class="main">
-
-        <div class="container-item  grid place-center">
-            <swiper-container class="mySwiper" pagination-dynamic-bullets="true" pagination="true" loop="true"
-                centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-
-                <swiper-slide class="Slide-1">
-                    <div class="main-content ">
-                        <div class="image-hero-container ">
-                            <img src="Full Size-1.png" alt="image-hero">
-                        </div>
-                        <div class="hero-content ">
-                            <div class="hero-title ">
-                                <h1>JEaLiFe Pictures</h1>
-                            </div>
-                            <div class="hero-description m-t-1">
-                                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-                                    industries for previewing layouts and visual mockups.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </swiper-slide>
-                <swiper-slide class="slide-2" data-aos="fade-down" data-aos-duration="1000">
-                    <div class="main-content ">
-                        <div class="image-hero-container ">
-                            <img src="8.png" alt="image-hero">
-                        </div>
-                        <div class="hero-content ">
-                            <div class="hero-title ">
-                                <h1>JEaLiFe Pictures</h1>
-                            </div>
-                            <div class="hero-description m-t-1">
-                                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-                                    industries for previewing layouts and visual mockups.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </swiper-slide>
-                <swiper-slide class="Slide-3">
-                    <div class="main-content ">
-                        <div class="image-hero-container ">
-                            <img src="happy man.png" alt="image-hero">
-                        </div>
-                        <div class="hero-content ">
-                            <div class="hero-title ">
-                                <h1>JEaLiFe Pictures</h1>
-                            </div>
-                            <div class="hero-description m-t-1">
-                                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-                                    industries for previewing layouts and visual mockups.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </swiper-slide>
-                <swiper-slide class="Slide-4">
-                    <div class="main-content ">
-                        <div class="image-hero-container ">
-                            <img src="DRIP_20.png" alt="image-hero">
-                        </div>
-                        <div class="hero-content m-t-5 ">
-                            <div class="hero-title ">
-                                <h1>JEaLiFe Pictures</h1>
-                            </div>
-                            <div class="hero-description m-t-1">
-                                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-                                    industries for previewing layouts and visual mockups.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </swiper-slide>
-                <swiper-slide class="Slide-5">
-                    <div class="main-content ">
-                        <div class="image-hero-container ">
-                            <img src="runing man.png" alt="image-hero">
-                        </div>
-                        <div class="hero-content m-t-5 ">
-                            <div class="hero-title ">
-                                <h1>JEaLiFe Pictures</h1>
-                            </div>
-                            <div class="hero-description m-t-1">
-                                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-                                    industries for previewing layouts and visual mockups.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </swiper-slide>
-            </swiper-container>
         </div>
-    </main>
+        
+        <div class="modal">
+            
+            <div class="modal-content">
+                <h2>Menu</h2>
+            </div>
+        </div>
+        <main class="main">
+
+            <div class="container-item grid place-center">
+                <swiper-container class="mySwiper"
+                    pagination-dynamic-bullets="true" pagination="true"
+                    loop="true"
+                    centered-slides="true" autoplay-delay="2500"
+                    autoplay-disable-on-interaction="false">
+
+                    <swiper-slide class="Slide-1">
+                        <div class="main-content ">
+                            <div class="image-hero-container ">
+                                <img src="Full Size-1.png" alt="image-hero">
+                            </div>
+                            <div class="hero-content ">
+                                <div class="hero-title ">
+                                    <h1>JEaLiFe Pictures</h1>
+                                </div>
+                                <div class="hero-description m-t-1">
+                                    <p>Lorem ipsum is placeholder text commonly
+                                        used in the graphic, print, and
+                                        publishing
+                                        industries for previewing layouts and
+                                        visual mockups.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="slide-2" data-aos="fade-down"
+                        data-aos-duration="1000">
+                        <div class="main-content ">
+                            <div class="image-hero-container ">
+                                <img src="8.png" alt="image-hero">
+                            </div>
+                            <div class="hero-content ">
+                                <div class="hero-title ">
+                                    <h1>JEaLiFe Pictures</h1>
+                                </div>
+                                <div class="hero-description m-t-1">
+                                    <p>Lorem ipsum is placeholder text commonly
+                                        used in the graphic, print, and
+                                        publishing
+                                        industries for previewing layouts and
+                                        visual mockups.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="Slide-3">
+                        <div class="main-content ">
+                            <div class="image-hero-container ">
+                                <img src="happy man.png" alt="image-hero">
+                            </div>
+                            <div class="hero-content ">
+                                <div class="hero-title ">
+                                    <h1>JEaLiFe Pictures</h1>
+                                </div>
+                                <div class="hero-description m-t-1">
+                                    <p>Lorem ipsum is placeholder text commonly
+                                        used in the graphic, print, and
+                                        publishing
+                                        industries for previewing layouts and
+                                        visual mockups.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="Slide-4">
+                        <div class="main-content ">
+                            <div class="image-hero-container ">
+                                <img src="DRIP_20.png" alt="image-hero">
+                            </div>
+                            <div class="hero-content m-t-5 ">
+                                <div class="hero-title ">
+                                    <h1>JEaLiFe Pictures</h1>
+                                </div>
+                                <div class="hero-description m-t-1">
+                                    <p>Lorem ipsum is placeholder text commonly
+                                        used in the graphic, print, and
+                                        publishing
+                                        industries for previewing layouts and
+                                        visual mockups.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="Slide-5">
+                        <div class="main-content ">
+                            <div class="image-hero-container ">
+                                <img src="runing man.png" alt="image-hero">
+                            </div>
+                            <div class="hero-content m-t-5 ">
+                                <div class="hero-title ">
+                                    <h1>JEaLiFe Pictures</h1>
+                                </div>
+                                <div class="hero-description m-t-1">
+                                    <p>Lorem ipsum is placeholder text commonly
+                                        used in the graphic, print, and
+                                        publishing
+                                        industries for previewing layouts and
+                                        visual mockups.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+        </main>
 
 
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
         $(document).ready(function () {
             /* $(".container-item").load("home.html");*/
             $("#accueil").css("color", "aqua");
@@ -239,14 +278,18 @@
 
         });
     </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
+        <script>
         AOS.init();
     </script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-</body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+        <script>
+                const toggleModal = () => document.body.classList.toggle("open");
+              </script>
+    </body>
 
 </html>
